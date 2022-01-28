@@ -33,14 +33,11 @@ describe('Assignment tests', function () {
         ...string,
         duration: 1.3,
       };
+
       saveResultToFile(input);
 
-      try {
-        const result = fs.readFileSync('./result/processed.json', 'utf8');
-        expect(JSON.parse(result)).to.deep.equal(input);
-      } catch (err) {
-        console.error(err);
-      }
+      const result = fs.readFileSync('./result/processed.json', 'utf8');
+      expect(JSON.parse(result)).to.deep.equal(input);
     });
   }
 });
