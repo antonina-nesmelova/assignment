@@ -1,3 +1,3 @@
-const { main } = require('./package.ts');
+const processPackage = require('./package.ts');
 
-main();
+processPackage.main();
