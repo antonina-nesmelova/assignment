@@ -2,7 +2,7 @@
   "name": "assignment",
   "version": "1.0.0",
   "description": "",
-  "main": "run.js",
+  "main": "src/run.ts",
   "scripts": {
     "run": "npx ts-node src/run.ts",
     "build": "tsc --build",
